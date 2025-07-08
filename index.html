@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nadeem Shaikh - Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --accent: #0078d7;
+    }
+    [data-theme="dark"] {
+      --bg: #1a1a1a;
+      --text: #eaeaea;
+      --accent: #66aaff;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      color: var(--accent);
+      margin-bottom: 0.2em;
+    }
+    .section {
+      margin-top: 2rem;
+    }
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      background: var(--accent);
+      color: white;
+      padding: 0.5em 1em;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+    .toggle {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <h1>Nadeem Shaikh</h1>
+      <div>
+        <button class="btn toggle" onclick="toggleTheme()"><i class="fas fa-adjust"></i> Toggle Theme</button>
+        <a href="https://inadeem.me/resumetodownload/Sr_QA_Engineer_Resume_Nadeem.pdf" class="btn" download><i class="fas fa-file-download"></i> Download PDF</a>
+      </div>
+    </div>
+
+    <p>Mumbai, India | +91-96-99-99-0912 | nadeem@inadeem.me | <a href="https://linkedin.com/in/nadeem-shaikh-8aa939106">LinkedIn</a> | <a href="https://inadeem.me">Blog</a></p>
+
+    <div class="section">
+      <h2>💼 Profile Summary</h2>
+      <p>Seasoned QA Engineer with 7+ years of mobile/web QA experience, including automation (Playwright, Appium, Selenium), API testing, and mentoring teams. Passionate about building quality-first products and collaborating cross-functionally. Proficient in Flutter, WordPress, and agile methodologies.</p>
+    </div>
+
+    <div class="section">
+      <h2>🛠️ Technical Skills</h2>
+      <p>Automation (Playwright, Selenium, Appium), API (Postman, Charles), Agile/Scrum, Flutter, WordPress, JIRA, Git, Android Studio, Xcode</p>
+    </div>
+
+    <div class="section">
+      <h2>🚀 Experience</h2>
+      <h3>Senior QA Engineer – Heady (2020–Present)</h3>
+      <p>Led QA for US brands, implemented automation, mentored QA team, collaborated with PMs.</p>
+
+      <h3>QA Engineer – GingerCube Inc. (2018–2020)</h3>
+      <p>Sole QA for healthcare SaaS. Handled mobile/web QA, automation, WordPress, API testing.</p>
+
+      <h3>QA Engineer – Haptik (2015–2017)</h3>
+      <p>Manual testing of AI chatbot systems, payment gateway QA, and AI contribution.</p>
+    </div>
+
+    <div class="section">
+      <h2>🎓 Education</h2>
+      <p>B.Com + IT – University of Mumbai</p>
+    </div>
+
+    <div class="section">
+      <h2>📜 Certifications & Awards</h2>
+      <p>ISTQB Certified Tester | Tricentis Testing Hero 2018 – Global Finalist</p>
+    </div>
+
+    <div class="section">
+      <h2>🌐 Community Leadership</h2>
+      <p>Bug Bounty Host & Winner | QA Blogs @ inadeem.me | QA Mentor & Contributor</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      document.documentElement.setAttribute('data-theme', currentTheme === 'dark' ? 'light' : 'dark');
+    }
+    // Default to light theme
+    document.documentElement.setAttribute('data-theme', 'light');
+  </script>
+</body>
+</html>
